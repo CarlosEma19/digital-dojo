@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modal CSS Only</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <!-- Botão para abrir a modal -->
+    <label for="modal-toggle" class="modal-button">Abrir Modal</label>
+
+    <!-- Checkbox invisível que controla o estado da modal -->
+    <input type="checkbox" id="modal-toggle" class="modal-toggle" />
+
+    <!-- A modal em si -->
+    <div class="modal">
+      <div class="modal-content">
+        <!-- Botão para fechar (também é um label que controla o checkbox) -->
+        <label for="modal-toggle" class="close-button" aria-label="Fechar modal"
+          >×</label
+        >
+
+        <h2>Título da Modal</h2>
+        <p>
+          Este é um exemplo de modal criado apenas com CSS, sem JavaScript. A
+          técnica utilizada é conhecida como "checkbox hack".
+        </p>
+
+        <p>Funcionalidades incluídas:</p>
+        <ul>
+          <li>Animação de abertura/fechamento suave</li>
+          <li>Overlay escuro semi-transparente</li>
+          <li>Responsividade para mobile</li>
+          <li>Foco na acessibilidade</li>
+          <li>Botão de fechar intuitivo</li>
+        </ul>
+
+        <div style="margin-top: 20px">
+          <label
+            for="modal-toggle"
+            class="modal-button"
+            style="background: #e74c3c"
+            >Fechar</label
+          >
+        </div>
+      </div>
+    </div>
+
+    <div
+      style="
+        margin-top: 30px;
+        padding: 20px;
+        background: #fff;
+        border-radius: 5px;
+      "
+    >
+      <h3>Conteúdo da página</h3>
+      <p>
+        Esta é a página principal. Quando você abre a modal, o conteúdo fica
+        escurecido pelo overlay, mas continua visível.
+      </p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,136 @@
+/* Reset e estilos base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  padding: 40px;
+  background: #f5f7fa;
+}
+
+/* Container principal */
+.tabs-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Estilo do grupo de tabs */
+.tabs {
+  position: relative;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Esconde os inputs radio */
+.tabs input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Container das labels (horizontal no desktop) */
+.tabs > .tab-label {
+  display: flex;
+  background: #f8f9fa;
+  border-bottom: 1px solid #e1e4e8;
+  order: 1;
+  margin-bottom: 0;
+}
+
+/* Estilo individual das labels */
+.tab-label {
+  padding: 14px 24px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  color: #555;
+  text-align: center;
+  flex: 1;
+  position: relative;
+}
+
+.tab-label:last-child {
+  border-right: none;
+}
+
+.tab-label:hover {
+  background: #e9ecef;
+  color: #333;
+}
+
+/* Indicador da aba ativa */
+.tabs input[type="radio"]:checked + .tab-label {
+  color: #2c7be5;
+  background: white;
+}
+
+.tabs input[type="radio"]:checked + .tab-label::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: #2c7be5;
+}
+
+/* Conteúdo das abas */
+.tab-content {
+  width: 100%;
+  order: 2;
+  display: none;
+  padding: 30px;
+  background: white;
+  border-top: 1px solid #e1e4e8;
+  animation: fadeIn 0.4s ease-out;
+}
+
+/* Mostra o conteúdo da aba ativa */
+#tab1:checked ~ #content-tab1,
+#tab2:checked ~ #content-tab2,
+#tab3:checked ~ #content-tab3 {
+  /* codigo aqui */
+}
+
+/* Animações */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Acessibilidade - foco */
+.tab-label:focus {
+  outline: 3px solid rgba(44, 123, 229, 0.4);
+  z-index: 1;
+}
+
+/* Responsividade - mobile */
+@media (max-width: 768px) {
+  body {
+      padding: 20px;
+  }
+  
+  .tabs > .tab-label {
+      flex-direction: column;
+  }
+  
+  .tab-label {
+      border-bottom: 1px solid #e1e4e8;
+      text-align: left;
+  }
+  
+  .tabs input[type="radio"]:checked + .tab-label::after {
+      left: 0;
+      bottom: 0;
+      width: 3px;
+      height: 100%;
+  }
+}

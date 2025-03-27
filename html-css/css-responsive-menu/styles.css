@@ -1,0 +1,118 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Container do header */
+header {
+  background: #333;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+.logo {
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.logo img {
+  width: 140px;
+  height: auto;
+}
+
+/* Esconde o checkbox */
+#menu-toggle {
+  display: none;
+  position: absolute;
+}
+
+/* Estilo do hamburger menu (mobile) */
+.menu-button {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.menu-button span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background: white;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+/* Navegação principal */
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  display: block;
+  transition: background 0.3s;
+}
+
+nav a:hover {
+  background: #555;
+}
+
+/* Estilos para mobile */
+@media (max-width: 1024px) {
+  .menu-button {
+    display: flex;
+  }
+
+  nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  nav ul {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background: #333;
+    flex-direction: column;
+    align-items: center;
+    padding: 0rem 0;
+    height: calc(100vh - 3.7rem);
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    position: absolute;
+    top: 3.7rem;
+    width: 100%;
+    left: 0;
+  }
+
+  #menu-toggle:checked ~ .menu-button span:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+  }
+
+  #menu-toggle:checked ~ .menu-button span:nth-child(2) {
+    opacity: 0;
+  }
+
+  #menu-toggle:checked ~ .menu-button span:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+  }
+}
