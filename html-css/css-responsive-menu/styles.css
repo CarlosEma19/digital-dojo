@@ -102,7 +102,43 @@ nav a:hover {
     top: 3.7rem;
     width: 100%;
     left: 0;
+    transform: translateX(100%);
   }
+
+  li {
+    width: 100%;
+    text-align: center;
+  }
+
+  @keyframes slide-in {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  /* @keyframes slide-out {
+    from {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    to {
+      transform: translate(100%);
+      opacity: 0;
+    }
+  } */
+
+  /* #menu-toggle ~ nav ul {
+    animation: slide-in 0.5s ease 0s 1 reverse forwards;
+  } */
+
+  #menu-toggle:checked ~ nav ul {
+    animation: slide-in 0.5s forwards;
+  }  
 
   #menu-toggle:checked ~ .menu-button span:nth-child(1) {
     transform: translateY(9px) rotate(45deg);
