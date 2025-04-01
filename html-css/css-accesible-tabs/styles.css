@@ -97,7 +97,7 @@ body {
 #tab1:checked ~ #content-tab1,
 #tab2:checked ~ #content-tab2,
 #tab3:checked ~ #content-tab3 {
-  /* codigo aqui */
+  display: block;
 }
 
 /* Animações */
