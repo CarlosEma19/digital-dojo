@@ -121,7 +121,7 @@ nav a:hover {
     }
   }
 
-  /* @keyframes slide-out {
+  @keyframes slide-out {
     from {
       transform: translateX(0);
       opacity: 1;
@@ -130,11 +130,11 @@ nav a:hover {
       transform: translate(100%);
       opacity: 0;
     }
-  } */
+  }
 
-  /* #menu-toggle ~ nav ul {
-    animation: slide-in 0.5s ease 0s 1 reverse forwards;
-  } */
+  #menu-toggle ~ nav ul {
+    animation: slide-out 0.5s ease 0s 1 forwards;
+  }
 
   #menu-toggle:checked ~ nav ul {
     animation: slide-in 0.5s forwards;
