@@ -97,7 +97,6 @@ nav a:hover {
     padding: 0rem 0;
     height: calc(100vh - 3.7rem);
     overflow: hidden;
-    transition: max-height 0.3s ease-out;
     position: absolute;
     top: 3.7rem;
     width: 100%;
