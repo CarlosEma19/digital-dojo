@@ -1,23 +1,52 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Accordion Acessível com CSS</title>
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-  <!-- 
-  Implementação de accordion usando apenas CSS:
-  1. Técnica: transição de max-height para animação suave
-  2. Requisitos:
-    - Acessível via teclado (tab/enter)
-    - Animações suaves de abertura/fechamento
-    - Estados visuais claros (hover/focus)
-  3. Estrutura básica:
-    - Botão de trigger (role="button")
-    - Container do conteúdo (role="region")
-    - Transição controlada por :checked ou :focus-within
-  -->
+  <div class="item1">
+    <input tabindex="1" type="checkbox" id="checkbox1" class="toggle">
+    <label for="checkbox1" role="button" class="btn">Titulo 1</label>
+
+    <div class="accordion-content" id="content1" role="region">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta velit veritatis illo odio saepe deleniti
+        quidem nesciunt explicabo, dicta at exercitationem recusandae. Fugit officiis voluptatibus quidem delectus,
+        omnis debitis in!</p>
+
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima iusto unde officia pariatur itaque vitae
+        totam tenetur suscipit ipsam blanditiis, magnam facilis quod rerum consequuntur molestiae quidem labore
+        accusamus ut!</p>
+
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus corporis minus non veritatis sit
+        modi sequi, excepturi officia expedita, saepe repellat sed quasi! Ipsa expedita itaque sint facere nulla odio!
+      </p>
+    </div>
+  </div>
+  <div class="item2">
+    <input tabindex="2" type="checkbox" id="checkbox2" class="toggle">
+    <label for="checkbox2" role="button" class="btn">Titulo 2</label>
+
+    <div class="accordion-content" id="content2" role="region">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta velit veritatis illo odio saepe deleniti
+        quidem nesciunt explicabo, dicta at exercitationem recusandae. Fugit officiis voluptatibus quidem delectus,
+        omnis debitis in!</p>
+    </div>
+  </div>
+  <div class="item3">
+    <input tabindex="3" type="checkbox" id="checkbox3" class="toggle">
+    <label for="checkbox3" role="button" class="btn">Titulo 3</label>
+
+    <div class="accordion-content" id="content3" role="region">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta velit veritatis illo odio saepe deleniti
+        quidem nesciunt explicabo, dicta at exercitationem recusandae. Fugit officiis voluptatibus quidem delectus,
+        omnis debitis in!</p>
+    </div>
+  </div>
 </body>
+
 </html>
