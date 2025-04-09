@@ -1,8 +1,67 @@
-/* Estilos gerais e reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.item1,
+.item2,
+.item3 {
+  /* border: 3px solid #0088ff; */
+  box-shadow: 0 0 6px -3px #000;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 5px;
+  line-height: 2em;
+}
+
+.item1:hover,
+.item2:hover,
+.item3:hover {
+  background-color: #ccc;
+}
+
+.item1:focus-within,
+.item2:focus-within,
+.item3:focus-within {
+  background-color: #0001;
+  border: 2px solid #0088ff;
+}
+
+.accordion-content {
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+}
+
+.toggle {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  position: relative;
+  text-align: left;
+}
+
+.btn::after {
+  content: "v";
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 12px;
+}
+
+.toggle:checked ~ .accordion-content {
+  max-height: 500px;
+}
+
+.toggle:checked + .btn::after {
+  transform: translateY(-50%) rotate(180deg);
+}
