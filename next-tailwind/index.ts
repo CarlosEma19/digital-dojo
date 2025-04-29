@@ -1,2 +1,1 @@
-export { default } from './hero'
- 
+export { default } from './components/hero/hero'
