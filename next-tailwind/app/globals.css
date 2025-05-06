@@ -10,7 +10,11 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-  --color-primary: #0D3928;
+}
+
+@theme {
+  --color-revolime: #C1DE36;
+  --color-revogreen: #0D3928;
 }
 
 body {
