@@ -4,7 +4,7 @@ import React from 'react'
 const Header = () => {
   return (
     <header className="fixed top-0 left-0 w-full bg-transparent z-50">
-      <div className="container flex justify-between items-center">
+      <div className="container flex justify-between  items-center sm:flex sm:flex-row ">
         <div className="img-logo">
           <Image
             className="revo"
@@ -16,8 +16,16 @@ const Header = () => {
           />
         </div>
 
-        <div className="button flex h-12 w-60 text-[#0D3928] bg-lime-300 rounded-4xl justify-center p-3.5 m-1">
-          <button>Faça sua simulação</button>
+        <div className="button h-9 px-4 flex text-revogreen bg-revolime rounded-4xl justify-center sm:h-12">
+          <button className='pr-1'>Faça sua simulação</button>
+          <Image
+            className="arrow"
+            src="/Icon.svg"
+            alt="button arrow"
+            width={10}
+            height={10}
+            priority
+          />
         </div>
       </div>
     </header>

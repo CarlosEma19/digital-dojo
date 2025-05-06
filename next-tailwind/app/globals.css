@@ -5,16 +5,13 @@
   --foreground: #171717;
 }
 
-@theme inline {
+@theme {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
-
-@theme {
-  --color-revolime: #C1DE36;
   --color-revogreen: #0D3928;
+  --color-revolime: #C1DE36;
 }
 
 body {
@@ -62,12 +59,4 @@ body {
 
 .bg-half {
   background: linear-gradient(to right, #fff 50%, #C1DE36 50%);
-}
-
-.tx-green {
-  color: #0D3928;
-}
-
-.bg-green {
-  background-color: #0D3928;
 }

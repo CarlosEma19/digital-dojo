@@ -29,7 +29,7 @@ const Footer = () => {
                 Site by
                 <Image
                   className="FutureBrand"
-                  src="/FutureBrand.svg"
+                  src="/icon/Logofb.svg"
                   alt="FutureBrand logo"
                   width={95}
                   height={12}
@@ -44,7 +44,7 @@ const Footer = () => {
             <div className="flex gap-2">
               <Image
                 className="linkedin"
-                src="/icon/linkedin.svg"
+                src="/icon/LI.svg"
                 alt="Icone do LinkedIn"
                 width={32}
                 height={32}
@@ -52,7 +52,7 @@ const Footer = () => {
               />
               <Image
                 className="instagram"
-                src="/icon/instagram.svg"
+                src="/icon/INS.svg"
                 alt="Icone do Instagram"
                 width={32}
                 height={32}
@@ -60,7 +60,7 @@ const Footer = () => {
               />
               <Image
                 className="spotify"
-                src="/icon/spotify.svg"
+                src="/icon/SP.svg"
                 alt="Icone do Spotify"
                 width={32}
                 height={32}
@@ -68,7 +68,7 @@ const Footer = () => {
               />
               <Image
                 className="youtube"
-                src="/icon/YouTube.svg"
+                src="/icon/YT.svg"
                 alt="Icone do Youtube"
                 width={32}
                 height={32}
@@ -76,7 +76,7 @@ const Footer = () => {
               />
               <Image
                 className="facebook"
-                src="/icon/facebook.svg"
+                src="/icon/FB.svg"
                 alt="Icone do Facebook"
                 width={32}
                 height={32}
