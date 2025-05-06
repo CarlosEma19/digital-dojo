@@ -3,6 +3,7 @@ import Graphic from "@/components/graphic";
 import Header from "@/components/header";
 import Hero from "@/components/hero";
 import Schedule from "@/components/schedule";
+import Footer from "@/components/footer";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Graphic />
       <About />
       <Schedule />
+      <Footer />
     </div>
   );
 }
