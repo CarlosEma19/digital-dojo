@@ -2,7 +2,11 @@ import About from "@/components/about";
 import Graphic from "@/components/graphic";
 import Header from "@/components/header";
 import Hero from "@/components/hero";
+<<<<<<< HEAD
 import Footer from "@/components/footer";
+=======
+import Schedule from "@/components/schedule";
+>>>>>>> main
 
 export default function Home() {
   return (
@@ -10,8 +14,18 @@ export default function Home() {
       {/* <Header />
       <Hero />
       <Graphic />
+<<<<<<< HEAD
       <About /> */}
       <Footer />
     </div>
   );
 }
+=======
+      <About />
+      <Schedule />
+    </div>
+  );
+}
+
+
+>>>>>>> main
