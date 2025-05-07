@@ -3,10 +3,10 @@ import React from 'react'
 
 const Schedule = () => {
   return (
-    <div className="bg-revogreen text-white py-24">
-      <div className='container-small text-center flex flex-col justify-center items-center'>
+    <div className="bg-revogreen text-white py-32">
+      <div className='container-small text-center flex gap-7 flex-col justify-center items-center'>
         <div className=''>
-          <h3 className='text-3xl sm:text-5xl md:text-6xl xl:text-7xl font-bold my-20'>
+          <h3 className='text-3xl sm:text-5xl md:text-6xl xl:text-7xl font-bold'>
             <span className="text-revolime">AGENDE AGORA</span>
             <span className="text-white"> MESMO</span>
             <span className="block text-white">SUA VISITA!</span>

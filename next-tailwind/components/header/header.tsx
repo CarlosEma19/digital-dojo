@@ -3,7 +3,7 @@ import React from 'react'
 
 const Header = () => {
   return (
-    <header className="fixed top-0 left-0 w-full bg-transparent z-50">
+    <header className="fixed top-0 left-0 w-full bg-half-2 z-50">
       <div className="container flex justify-between  items-center sm:flex sm:flex-row ">
         <div className="img-logo">
           <Image
@@ -16,8 +16,8 @@ const Header = () => {
           />
         </div>
 
-        <div className="button h-9 px-4 flex text-revogreen bg-revolime rounded-4xl justify-center sm:h-12">
-          <button className='pr-1'>Faça sua simulação</button>
+        <div className="button flex h-12 w-60 text-revogreen bg-revolime rounded-4xl justify-center items-center p-3.5">
+          <button className='mx-2'>Faça sua simulação</button>
           <Image
             className="arrow"
             src="/Icon.svg"
@@ -27,6 +27,7 @@ const Header = () => {
             priority
           />
         </div>
+
       </div>
     </header>
   )
