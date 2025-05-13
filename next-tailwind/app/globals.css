@@ -60,3 +60,20 @@ body {
 .bg-half {
   background: linear-gradient(to right, #fff 50%, #C1DE36 50%);
 }
+
+.scrolled {
+  background: linear-gradient(to bottom, #0D3928, #ffffff00);
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} 
+
+.spinner {
+  animation: spin 5s linear infinite;
+}

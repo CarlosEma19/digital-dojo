@@ -3,7 +3,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div className="w-full bg-green">
+    <div className="w-full bg-revogreen">
       <footer className="container grid grid-cols-1 py-7">
         <div className="cima border-b-2 border-b-white flex flex-col md:flex-row justify-between items-start md:items-end gap-4 md:gap-0">
           <div className="image col-start-1 py-2">
