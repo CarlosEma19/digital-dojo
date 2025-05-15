@@ -3,26 +3,44 @@
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import { onScroll } from "@/utils/scroll";
+import { motion } from "framer-motion";
+import type { Variants } from "framer-motion";
 
 const Header = () => {
   const [scrollPosition, setScrollPosition] = useState("");
   const doSomething = (scrollPosition: number) => {
-    console.log(scrollPosition);
     if (scrollPosition > 50) {
       setScrollPosition("scrolled");
-      console.log("scrolled");
     } else {
       setScrollPosition("");
-      console.log("Scroll position is less than or equal to 50");
     }
+  };
+  const cardVariants: Variants = {
+    offscreen: {
+      y: 50,
+      opacity: 0,
+    },
+    onscreen: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        type: "spring",
+        bounce: 0.4,
+        duration: 1,
+      },
+    },
   };
   useEffect(() => {
     return onScroll((scrollPosition) => doSomething(scrollPosition));
   }, []);
 
   return (
-    <header
+    <motion.header
       className={`header ${scrollPosition} header-bg fixed top-0 left-0 w-full z-50`}
+      initial="offscreen"
+      whileInView="onscreen"
+      viewport={{ amount: 0.4, once: true }}
+      variants={cardVariants}
     >
       <div className="container flex justify-between  items-center ">
         <div className="img-logo relative w-[171px] h-[143px] flex items-center justify-center overflow-hidden">
@@ -64,7 +82,7 @@ const Header = () => {
           />
         </div>
       </div>
-    </header>
+    </motion.header>
   );
 };
 
