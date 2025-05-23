@@ -12,6 +12,7 @@
   --font-mono: var(--font-geist-mono);
   --color-revogreen: #0D3928;
   --color-revolime: #C1DE36;
+  --color-revo-gradient: linear-gradient(to right, #fff 50%, #C1DE36 50%);
 }
 
 body {
@@ -59,4 +60,13 @@ body {
 
 .bg-half {
   background: linear-gradient(to right, #fff 50%, #C1DE36 50%);
+}
+
+.bg-half-2 {
+  background: linear-gradient(to bottom, #0D3928, #ffffff00);
+}
+
+.green-bg::before {
+  content: "";
+  @apply absolute top-0 w-[calc(100%+2rem)] -translate-x-4 md:translate-x-0 -translate-y-20 md:translate-y-0 md:left-1/2 bg-revolime md:w-[50vw] h-screen -z-10;
 }

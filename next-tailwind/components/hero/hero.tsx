@@ -12,8 +12,8 @@ const Hero = () => {
         height={868}
         priority
       />
-      <div className="absolute container-small inset-0 flex justify-center items-center text-justify lg:grid lg:grid-cols-12">
-        <div className="w-4/6 lg:w-full md:col-start-2 md:col-span-9 lg:col-start-3 lg:col-span-8 xl:col-start-4 xl:col-span-6  ">
+      <div className="absolute container inset-0 flex justify-center items-center text-justify lg:grid lg:grid-cols-12">
+        <div className="lg:w-full md:col-start-2 md:col-span-9 lg:col-start-3 lg:col-span-8 xl:col-start-4 xl:col-span-6  ">
           <h2 className="font-bold text-white text-center uppercase mb-6 text-3xl sm:text-5xl md:text-6xl xl:text-7xl">
             A REVO ENERGIA OFERECE O <span className="text-revolime">MELHOR EM ENERGIA SOLAR</span>
           </h2>

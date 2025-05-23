@@ -4,7 +4,7 @@ import React from 'react'
 const Graphic = () => {
   return (
     <div className="bg-revogreen">
-  <div className="w-full min-h-screen flex flex-col pt-32 pb-10">
+  <div className="w-full flex flex-col py-32">
     <h2 className="text-5xl text-white font-bold text-center uppercase mb-16">Como Funciona</h2>
 
     <div className="container-small text-white grid grid-cols-1 md:grid-cols-10 auto-rows-auto gap-10">
