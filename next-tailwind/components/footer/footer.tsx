@@ -1,10 +1,10 @@
-import Image from 'next/image'
-import React from 'react'
+import Image from "next/image";
+import React from "react";
 
 const Footer = () => {
   return (
     <div className="w-full bg-revogreen">
-      <footer className="container grid grid-cols-1 py-32">
+      <footer className="container grid grid-cols-1 py-7">
         <div className="cima border-b-2 border-b-white flex flex-col md:flex-row justify-between items-start md:items-end gap-4 md:gap-0">
           <div className="image col-start-1 py-2">
             <Image
@@ -16,9 +16,7 @@ const Footer = () => {
               priority
             />
           </div>
-          <div className="tell text-revolime text-2xl">
-            11 98682-0203
-          </div>
+          <div className="tell text-revolime text-2xl">11 98682-0203</div>
         </div>
 
         <div className="baixo text-white flex flex-col md:flex-row justify-between gap-6 pt-4">
@@ -90,4 +88,4 @@ const Footer = () => {
   );
 };
 
-export default Footer
+export default Footer;
