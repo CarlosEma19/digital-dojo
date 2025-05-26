@@ -42,6 +42,7 @@ const Footer = () => {
             />
           </div>
           <div className="tell text-revolime text-2xl">11 98682-0203</div>
+          <div className="tell text-revolime text-2xl">11 98682-0203</div>
         </div>
 
         <div className="baixo text-white flex flex-col md:flex-row justify-between gap-6 pt-4">
@@ -112,5 +113,7 @@ const Footer = () => {
     </div>
   );
 };
+
+export default Footer;
 
 export default Footer;
