@@ -12,6 +12,7 @@
   --font-mono: var(--font-geist-mono);
   --color-revogreen: #0D3928;
   --color-revolime: #C1DE36;
+  --color-revo-gradient: linear-gradient(to right, #fff 50%, #C1DE36 50%);
 }
 
 body {
@@ -69,10 +70,11 @@ body {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
-} 
+}
 
 .spinner {
   animation: spin 5s linear infinite;

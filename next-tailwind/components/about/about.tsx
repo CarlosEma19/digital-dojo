@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import Image from "next/image";
 import React from "react";
@@ -41,9 +41,9 @@ const About = () => {
           </p>
         </div>
 
-        <div className="container-small flex flex-col items-center col-start-2">
-          <div className="topo flex gap-4 items-center pb-7">
-            <div className="w-auto flex items-center">
+        <div className="green-bg md:col-span-4 md:col-start-7 relative md:static">
+          <div className="titulo ">
+            <div className="w-auto">
               <Image
                 className="h-16 w-auto object-contain"
                 src="/huaweilogo.svg"
@@ -58,7 +58,6 @@ const About = () => {
               Parceria estratégica
             </h2>
           </div>
-
           <p className="sm:text-2xl">
             A REVO Energia é Parceira Oficial da HUAWEI, líder global de
             soluções de Tecnologia da Informação e Comunicação (TIC) e Energia
