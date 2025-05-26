@@ -1,10 +1,35 @@
+"use client";
+
 import Image from "next/image";
 import React from "react";
+import { motion } from "framer-motion";
+import type { Variants } from "framer-motion";
 
 const Footer = () => {
+  const cardVariants: Variants = {
+    offscreen: {
+      y: 50,
+      opacity: 0,
+    },
+    onscreen: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        type: "spring",
+        bounce: 0.4,
+        duration: 3,
+      },
+    },
+  };
   return (
     <div className="w-full bg-revogreen">
-      <footer className="container grid grid-cols-1 py-7">
+      <motion.footer
+        className="container grid grid-cols-1 py-7"
+        initial="offscreen"
+        whileInView="onscreen"
+        viewport={{ amount: 0.4, once: true }}
+        variants={cardVariants}
+      >
         <div className="cima border-b-2 border-b-white flex flex-col md:flex-row justify-between items-start md:items-end gap-4 md:gap-0">
           <div className="image col-start-1 py-2">
             <Image
@@ -16,6 +41,7 @@ const Footer = () => {
               priority
             />
           </div>
+          <div className="tell text-revolime text-2xl">11 98682-0203</div>
           <div className="tell text-revolime text-2xl">11 98682-0203</div>
         </div>
 
@@ -83,9 +109,11 @@ const Footer = () => {
             </div>
           </div>
         </div>
-      </footer>
+      </motion.footer>
     </div>
   );
 };
+
+export default Footer;
 
 export default Footer;
