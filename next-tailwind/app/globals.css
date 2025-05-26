@@ -79,3 +79,8 @@ body {
 .spinner {
   animation: spin 5s linear infinite;
 }
+
+.green-bg::before {
+  content: "";
+  @apply absolute top-0 w-[calc(100%+2rem)] -translate-x-4 md:translate-x-0 -translate-y-20 md:translate-y-0 md:left-1/2 bg-revolime md:w-[50vw] h-screen md:h-full -z-50;
+}
