@@ -1,0 +1,25 @@
+body {
+    font-weight: bold;
+    text-transform: uppercase;
+    display: grid;
+    grid-area: 1fr 1fr 1fr;
+    justify-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(53, 49, 49);
+    color: #fff;
+}
+
+h1 {
+    grid-column: span 3;
+}
+
+.purple-box {
+    height: 100px;
+    width: 100px;
+    background-color: rebeccapurple;
+    grid-column: 2;
+}
+
+ul {
+    grid-column: span 3;
+}
